@@ -8,5 +8,5 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => 'https://github.com/emrearmagan/MemojiView.git', :tag => spec.version }
   spec.swift_version = '5.0'
   spec.ios.deployment_target = '12.0'
-  spec.source_files = 'MemojiView/**/*'
+  spec.source_files = 'Sources/**/*'
 end

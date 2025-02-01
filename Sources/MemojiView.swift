@@ -112,6 +112,10 @@ open class MemojiView: UIView, MemojiTextViewDelegate {
         ])
     }
 
+    open func start() {
+      memojiView.didTapView()
+    }
+
     // MARK: - MemojiTextViewDelegate
 
     /// Called when the emoji or image is updated.

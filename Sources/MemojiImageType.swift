@@ -19,4 +19,14 @@ public enum MemojiImageType: Equatable {
     ///   - count: The number of characters in the text.
     ///   - value: The actual text value used to generate the image.
     case text(count: Int, value: String)
+
+
+  public var isText: Bool {
+    switch self {
+      case .memoji, .emoji:
+        return false
+      case .text:
+        return true
+    }
+  }
 }
